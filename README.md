@@ -26,6 +26,7 @@ After this, run **Klaybot.bat** to start the bot.
 <img src="https://user-images.githubusercontent.com/72490903/132651490-1b94ce52-7c48-4d3b-80ec-99cd87460ceb.png" width="800" height="500" align = "right">
 .
 <img src="https://user-images.githubusercontent.com/72490903/132651520-02f6118f-056e-4046-b818-7c8f1f9f012f.png" width="950" height="500">
+.
 
 
 ## 🏃‍♂️ Run the projects
