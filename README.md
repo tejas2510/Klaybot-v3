@@ -29,5 +29,5 @@ Contributions are always welcomed :D Make sure to follow [Contributing.md](/CONT
 <a href="https://github.com/tejas2510/Klaybot-v6/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=tejas2510/Klaybot-v6" />
 </a>
-\ 
+
 Made with 💖 and Python!
