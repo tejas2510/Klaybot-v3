@@ -4,9 +4,9 @@
 **Covid-19** as we all know has disturbed lives of millions across the world, along with the disruption of normal lives, many suffered from mental issues, which they couldn't talk about thinking, during a worldwide pandemic, talking about mental health would be silly and stupid. This is why we decided to make something, for the society, to help them to talk to someone, if not a human, prolly a computer thats trained to be no less smarter. Klaybot was an attempt by us to achieve this. We have used Python and JS to make this bot, it supports both voice and chat functionality. Contributions are welcome, Email us on: [klay2510@outlook.com](mailto:klay2510@outlook.com). Try the project to know more :P
 
 
-##  📝  Tutorial
+##  📝  How to make it work?
 
-**Firstly open the folder containing the files and open powershell here**
+###### **Firstly open the folder containing the files and open powershell here**
 
 After that run this in powershell. Make sure to run it one after another and powershell should be opened in the core folder.
 >pip install -r requirements.txt\
