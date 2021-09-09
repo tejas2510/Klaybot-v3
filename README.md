@@ -7,7 +7,7 @@
 
 **Firstly run requirements.bat in the folder.**
 
-After that run this in the python shell
+After that run this in the python shell. Make sure you open the python shell in the core folder.
 >import nltk \
 >nltk.download("punkt")
 ```
