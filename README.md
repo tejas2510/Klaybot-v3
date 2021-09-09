@@ -37,8 +37,8 @@ After this, run **Klaybot.bat** to start the bot.
 
 Contributions are always welcomed :D Make sure to follow [Contributing.md](/CONTRIBUTING.md)
 
-<a href="https://github.com/tejas2510/Klaybot-v6/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=tejas2510/Klaybot-v6" />
+<a href="https://github.com/tejas2510/KlayBot-v6/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=tejas2510/KlayBot-v6" />
 </a>
 
 
