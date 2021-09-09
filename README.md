@@ -6,9 +6,11 @@
 
 ##  📝  Tutorial
 
-**Firstly run requirements.bat in the folder.**
+**Firstly open the folder containing the files and open powershell here**
 
-After that run this in the python shell. Make sure you open the python shell in the core folder.
+After that run this in powershell. Make sure to run it one after another and powershell should be opened in the core folder.
+>pip install -r requirements.txt\
+>python\
 >import nltk \
 >nltk.download("punkt")
 ```
