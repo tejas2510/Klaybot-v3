@@ -1,15 +1,13 @@
-# KLAYBOT_V6
+<h1 align="center"> 🎇KlayBot🎆
  
-## To run the bot, follow this:
+##  📝  Tutorial
 
-**Firstly run requirements.bat**
+**Firstly run requirements.bat in the folder.**
 
 After that run this in the python shell
 >import nltk \
 >nltk.download("punkt")
-
-After this, run **Klaybot.bat**
-
-
-
- 
+```
+Punkt is the tokenizer used to train the way the bot speaks.
+```
+After this, run **Klaybot.bat** to start the bot.
