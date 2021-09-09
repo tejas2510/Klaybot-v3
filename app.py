@@ -14,6 +14,7 @@ import pyttsx3
 engine = pyttsx3.init()
 
 a = None
+#text bot
 def bot():
     BG_GRAY = "#ABB2B9"
     BG_COLOR = "#17202A"
