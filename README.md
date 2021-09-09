@@ -1,6 +1,6 @@
 # KLAYBOT_V6
  
-##To run the bot, follow this:
+## To run the bot, follow this:
 
 **Firstly run requirements.bat**
 
