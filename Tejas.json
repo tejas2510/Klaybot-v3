@@ -496,7 +496,7 @@
       "tag":"transcript_no",
       "patterns": ["discard","DISCARD","Discard"],
       "responses": [
-        "Cool then Bye :). (Type \"Bye\" to end the convo)"
+        "Cool then, have a good day ahead :). (Type \"Bye\" to end the convo)"
       ]
     }
   ]
