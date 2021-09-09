@@ -4,8 +4,8 @@
 **Covid-19** as we all know has disturbed lives of millions across the world, along with the disruption of normal lives, many suffered from mental issues, which they couldn't talk about thinking, during a worldwide pandemic, talking about mental health would be silly and stupid. This is why we decided to make something, for the society, to help them to talk to someone, if not a human, prolly a computer thats trained to be no less smarter. Klaybot was an attempt by us to achieve this. We have used Python and JS to make this bot, it supports both voice and chat functionality. Contributions are welcome, Email us on: [klay2510@outlook.com](mailto:klay2510@outlook.com). Try the project to know more :P
 
 ## ❗Prerequisites❗
-- [Python 3](https://www.python.org/downloads/release/python-385/)
 - A computer (> ^_^ )>
+- [Python 3](https://www.python.org/downloads/release/python-385/)
  
 ##  📝  How to make it work?
 
@@ -20,6 +20,13 @@ After that run this in powershell. Make sure to run it one after another and pow
 Punkt is the tokenizer used to train the way the bot speaks.
 ```
 After this, run **Klaybot.bat** to start the bot.
+ 
+## 📸 Screenshots
+ 
+![ss1](https://user-images.githubusercontent.com/72490903/132651449-218ab220-2146-478f-9a94-b054c50e5b43.png)
+![ss2](https://user-images.githubusercontent.com/72490903/132651490-1b94ce52-7c48-4d3b-80ec-99cd87460ceb.png)
+![ss3](https://user-images.githubusercontent.com/72490903/132651520-02f6118f-056e-4046-b818-7c8f1f9f012f.png)
+
 
 ## 🏃‍♂️ Run the projects
 
