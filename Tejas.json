@@ -1,0 +1,503 @@
+
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "sup",
+        "wassup",
+        "How you doin?",
+        "who you",
+        "Hola",
+        "Hello There"
+      ],
+      "responses":[
+        "Hey there! How you feeling?",
+        "Hi ! How you doing? ",
+        "Hey It is a pleasure to meet you. How are you feeling?"
+      ]
+    },
+    {
+      "tag":"feeling",
+      "patterns": [
+          "Sorrow",
+          "Miserable",
+          "Bored",
+          "trash.",
+          "isolated",
+          "little",
+          "actually",
+          "very",
+          "low",
+          "bit"
+      ],
+      "responses":[
+        "Do not worry man I will cheer you up!\n         Do you wanna hear a joke or wanna hear some good music?",
+        "Push yourself cuz no one else is going to do it for you!\n         Do you want good music or want to crack yourself up with jokes."
+      ]
+    },
+    {
+      "tag": "intro",
+      "patterns": ["ooh","see","ok","damn","lol","lmao","okay"],
+      "responses": [
+        "Alright! Cool then, so tell me how often over the last 2 weeks were you bothered by feeling anxious , nervous , on edge or\n         unable to stop or control your worry. You could say something like often, very often or sometimes."
+      ]
+    },
+    {
+      "tag": "i2",
+      "patterns": ["often","lot","many","times","to","sometimes","very"],
+      "responses": [
+        "Im sorry to hear that, and I know that some questions can be tough and sometimes painful to answer so I really appreciate you doing it.\n         So anyways we shall move to our first check-in . If you want to continue type \"continue\" or else type \"quit\" to end the conversation"
+      ]
+    },
+    {
+      "tag": "i3",
+      "patterns": ["continue","Continue","CONTINUE"],
+      "responses" : [
+        "Yeah. So anyways thanks for answering those questions for me...Let us continue!.\n         Tell me how is your mood now? Like are you feeling low / miserable or, or simply just happy?"
+
+      ]
+    },
+    {
+      "tag": "happy",
+      "patterns": ["happy","good","nice","cool"],
+      "responses": [
+        "I am happy that you are doing good. \n         Maybe we just were not built for each other :(\n\n         There is not much we can do for you as the purpose of the bot is to help people in distress. \n         Anyways you can check this music playlist:\n         spotify: https://open.spotify.com/playlist/0iP9El8ay0oZNIPoSxCq26?si=c9M00AV4QhqFpTLAKQ7Riw\n         youtube: https://youtube.com/playlist?list=PLnMhem1Qaly5hCKafkM7KIFffij9782ko\n\n         Or just ask me to tell you some jokes :D"
+      ]
+    },
+    {
+      "tag": "extra",
+      "patterns": ["nah","not much","never"],
+      "responses": [
+        "I am happy that you are doing good.\nMaybe we just werent built for each other :( \n\nThere is not much we can do for you as the purpose of the bot is to help people in distress. \nAnyways you can check this music playlist:\n\tspotify: https://open.spotify.com/playlist/0iP9El8ay0oZNIPoSxCq26?si=c9M00AV4QhqFpTLAKQ7Riw\n\tyoutube: https://youtube.com/playlist?list=PLnMhem1Qaly5hCKafkM7KIFffij9782ko\n\nOr just ask me to tell you some jokes :D"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, It was nice talking to you!",
+        "Have a nice day and always remember that i am there if you need any help.",
+        "Bubye! Have a good day!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank"],
+      "responses": ["Happy to help! :)", "Any time!", "My pleasure :)","Nah! Mate thats my pleasure :)","Happy to hear that I could help!"]
+    },
+    {
+      "tag":"music",
+      "patterns":[
+        "song",
+        "playlist",
+        "music",
+        "good music"
+      ],
+      "responses":[
+        "do not worry ! I have a good taste in music, here are the links to the specially curated playlists i have made for you xD\n         i am pretty sure you will love the songs and hopefully makes your mood better :D\n         spotify: https://open.spotify.com/playlist/0iP9El8ay0oZNIPoSxCq26?si=c9M00AV4QhqFpTLAKQ7Riw\n         youtube: https://youtube.com/playlist?list=PLnMhem1Qaly5hCKafkM7KIFffij9782ko\n\n          Anyways could you tell me whether you were sad due to any of these reasons?\n         >Academics\n         >Bullying\n         >Depression\n         >Obesity\n         >Relationships\n         >Social media toxicity\n         >Substance abuse\n         >None",
+        "Go and listen up to this playlist, specially curated playlists for you xD\n         by clicking on this link.I hope that it makes you feel happy and motivated.Also, trust me  I have a good taste in music XD\n         spotify: https://open.spotify.com/playlist/0iP9El8ay0oZNIPoSxCq26?si=c9M00AV4QhqFpTLAKQ7Riw\n         youtube: https://youtube.com/playlist?list=PLnMhem1Qaly5hCKafkM7KIFffij9782ko\n\n         Anyways could you tell me whether you were sad due to any of these reasons?\n         >Academics\n         >Bullying\n         >Depression\n         >Obesity\n         >Relationships\n         >Social media toxicity\n         >Substance abuse\n         >None",
+        "Ima suggest you go listen to this playlist specially curated for you xD.Links are down there!\n         i am pretty sure you will like it. I have a good taste in music :D\n         spotify: https://open.spotify.com/playlist/0iP9El8ay0oZNIPoSxCq26?si=c9M00AV4QhqFpTLAKQ7Riw\n         youtube: https://youtube.com/playlist?list=PLnMhem1Qaly5hCKafkM7KIFffij9782ko\n\n         Anyways could you tell me whether you were sad due to any of these reasons?\n         >Academics\n         >Bullying\n         >Depression\n         >Obesity\n         >Relationships\n         >Social media toxicity\n         >Substance abuse\n         >None"
+      ]
+    },
+    {
+      "tag": "y",
+      "patterns": ["yes","YES","Yes"],
+      "responses": [
+       "i am glad that I could help you. If you got something else you would want to know about, among these.\n         You are free to type it down there!\n         >Academics\n         >Bullying\n         >Depression\n         >Obesity\n         >Relationships\n         >Social media toxicity\n         >Substance abuse\n         >None\n\n         You can check out our epic music playlist XD. If u want to end the conversation type \"quit\"\n         PS: I aint that bad a friend and our conversations are private and encrypted."
+      ]
+    },
+    {
+      "tag":  "n",
+      "patterns": ["no","NO","No"],
+      "responses": [
+        "i am really sorry I could not help you. Maybe we werent not built for each other.\n         This is a link to our social media handle! You can just text my programmers there :)\n         https://discord.gg/3bxEGZKtKe\n         They will always be there for anyone who is in need and need help and just want to talk to someone :)\n         Note: It will be totally anonymous so you do not have to worry about your personal information getting leaked!\n\n         You can check out our epic music playlist XD. If u want to end the conversation type \"quit\""
+      ]
+
+    },
+    {
+      "tag": "joke",
+      "patterns": [
+        "joke",
+        "funny",
+        "laugh"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.\n\n         Anyways could you tell me whether you were sad due to any of these reasons?\n         >Academics\n         >Bullying\n         >Depression\n         >Obesity\n         >Relationships\n         >Social media toxicity\n         >Substance abuse\n         >None",
+        "What did the buffalo say when his son left for college? Bison.\n\n         Anyways could you tell me whether you were sad due to any of these reasons?\n         >Academics\n         >Bullying\n         >Depression\n         >Obesity\n         >Relationships\n         >Social media toxicity\n         >Substance abuse\n         >None",
+        "Why arent koalas actual bears? They dont meet the koalafications.\n\n         Anyways could you tell me whether you were sad due to any of these reasons?\n         >Academics\n         >Bullying\n         >Depression\n         >Obesity\n         >Relationships\n         >Social media toxicity\n         >Substance abuse\n         >None",
+        "What do you call a Frenchman wearing sandals? Phillipe Phillope.\n\n         Anyways could you tell me whether you were sad due to any of these reasons?\n         >Academics\n         >Bullying\n         >Depression\n         >Obesity\n         >Relationships\n         >Social media toxicity\n         >Substance abuse\n         >None",
+        "What do Alexander the Great and Winnie the Pooh have in common? Same middle name.\n\n         Anyways could you tell me whether you were sad due to any of these reasons?\n         >Academics\n         >Bullying\n         >Depression\n         >Obesity\n         >Relationships\n         >Social media toxicity\n         >Substance abuse\n         >None"
+      ]
+    },
+    {
+      "tag": "depression",
+      "patterns": [
+        "Depressed",
+        "Depression",
+        "depressed",
+        "depression",
+        "depressed",
+        "feel depressed",
+        "depression is what i feel",
+        "im depressed",
+        "DEPRESSION"
+      ],
+      "responses": [
+        "Look, i know you have already seen the preview and its really long and all that and you have already decided there is no way you are \n         gonna read this I understand lol, I am the same age as you are, Thats why, instead of whining i suggest you take a look at this.\n         Estimated read time : 5 mins (you will spend more lol)\n\n\n         According to The National Institute of Mental Health, an estimated 3.2 million adolescents in the United States\n         had at least one major depressive episode in 2017. That means about 13% of teenagers may experience depression\n         before reaching adulthood.\n\n         You are not alone :))\n\n         Talking to someone about depression\n         It may seem like there is no way your parents will be able to help, especially if they are always nagging you\n         or getting angry about your behavior. The truth is, parents hate to see their kids hurting. They may feel\n         frustrated because they dont understand what is going on with you or know how to help.\n\n         Press T to continue :D"
+      ]
+    },
+    {
+      "tag":"depression pt1",
+      "patterns":[
+        "T",
+        "t"
+      ],
+      "responses":[
+        "If your parents are abusive in any way, or if they have problems of their own that makes it difficult for them\n         to take care of you, find another adult you trust (such as a relative, teacher, counselor, or coach).\n         This person can either help you approach your parents, or direct you toward the support you need.\n         If you truly dont have anyone you can talk to, there are many hotlines, services, and support groups that can help.\n         No matter what, talk to someone, especially if you are having any thoughts of harming yourself or others. Asking for\n         help is the bravest thing you can do, and the first step on your way to feeling better. :P ik this is India, people will think you\n         are mad or something, but bruh, you are doing this for yourself. All lives matter\n\n         It can be hard to open up about how you are feeling—especially when you are feeling depressed, ashamed, or worthless.\n         It is important to remember that many people struggle with feelings like these at one time or another—it doesnt mean\n         that you are weak, fundamentally flawed, or no good. Accepting your feelings and opening up about them with someone \n         you trust will help you feel less alone.\n\n         Press B to continue xD"
+
+      ]
+    },
+    {
+      "tag":"depression pt2",
+      "patterns":[
+        "B",
+        "b"
+
+      ],
+      "responses":[
+        "Tip 2: Try not to isolate yourself—it makes depression worse\n\n         Depression causes many of us to withdraw into our shells. You may not feel like seeing anybody or doing anything and some days\n         just getting out of bed in the morning can be difficult. But isolating yourself only makes depression worse.\n         So even if its the last thing you want to do, try to force yourself to stay social.\n         As you get out into the world and connect with others, you will likely find yourself starting to feel better.\n\n         Spend time face-to-face with friends who make you feel good—especially those who are active, upbeat, and understanding.\n         Avoid hanging out with those who abuse drugs or alcohol, get you into trouble, or make you feel judged or insecure.\n         If you dont have anyone, there is always music :)) we have curated a playlist just for you, just type i wanna hear music down there :)\n\n         Get involved in activities you enjoy (or used to). Getting involved in extracurricular activities seem like a daunting\n         prospect when you are depressed, but you will feel better if you do. Choose something you have enjoyed in the past, whether\n         it be a sport, an art, dance or music class, or an after-school club. You might not feel motivated at first, but as you\n         start to participate again, your mood and enthusiasm will begin to lift.\n\n         Press C to continue :) "
+
+      ]
+    },
+    {
+      "tag": "depression pt3",
+      "patterns": [
+        "C",
+        "c"
+      ],
+      "responses":[
+        "VERY VERY IMPORTANT COMING AHEAD :P\n         ======================================\n         Cut back on your social media use. While it may seem that losing yourself online will temporarily ease depression symptoms,\n         it can actually make you feel even worse. Comparing yourself unfavorably with your peers on social media, for example, only\n         promotes feelings of depression and isolation. Remember: people always exaggerate the positive aspects of their lives online,\n         brushing over the doubts and disappointments that we all experience. And even if you are just interacting with friends online,\n         it is no replacement for in-person contact. Eye-to-eye contact, a hug, or even a simple touch on the arm from a friend can make \n         all the difference to how you are feeling.\n         Personal experience? Trust me this work like megic, Soical media is a bitch or whatever idek, just its toxic af.\n\n         Tips for managing stress\n         Managing the stress in your life starts with identifying the sources of that stress:\n\n         --> If exams or classes seem overwhelming, for example, talk to a teacher or school counselor, or find ways of improving how you\n         manage your time. Nothing will happen, be daring and talk lmao\n         --> If you have a health concern you feel you cant talk to your parents about—such as a pregnancy scare or drug problem—seek\n         medical attention at a clinic or see a doctor. A health professional can guide you towards appropriate treatment\n         (and help you approach your parents if that is necessary).\n         If you are struggling to fit in or dealing with relationship, friendship, or family difficulties, talk your problems over with\n         your school counselor or a professional therapist. Exercise, meditation, muscle relaxation, and breathing exercises are other \n         good ways to cope with stress. We all have been here :((\n         --> If your own negative thoughts and chronic worrying are contributing to your everyday stress levels, you can take steps to break\n         the habit and regain control of your worrying mind.\n\n         Press D to continue :D"
+      ]
+    },
+    {
+      "tag": "depression pt4",
+      "patterns": [
+        "D",
+        "d"
+      ],
+      "responses": [
+        "Just saying bruh depression doesnt mean something's wrong with you or anything, its totally natural. I mean you can always cope up.\n         Hope we helped :P and oh, do check out the playlist we made for you ;)\n         And its definitely been more than 5 mins :D\n\n         Did we help you solve your problem?\n\n         Reply with a yes/no:"
+      ]
+    },
+    {
+      "tag": "bullying",
+      "patterns": [
+        "I get bullied",
+        "People bully me",
+        "Bully",
+        "bully",
+        "bullied",
+        "Bullied",
+        "Ragged",
+        "ragging",
+        "bullying",
+        "Bullying",
+        "BULLYING"
+      ],
+      "responses": [
+        "Estimated read time : 4 minutes, 29 seconds,Worth it bruh trust me\n\n         According to the National Center for Education Statistics, about 20% of teens in the U.S. experienced bullying in 2017.\n         One explanation the research has cited for this is the rise of social media use by teens, which has made bullying much\n         more public and more pervasive. In fact, cyberbullying has replaced bullying as the common type of harassment that teens experience.\n\n\n         Being a victim of any kind of bullying feels really bad and its important for you to know two things:\n\n         You are NOT alone\n         It is NOT your fault\n         So now that you know that, here is how you can STOMP Out Bullying:\n\n         Press E to continue :P"
+      ]
+    },
+    {
+      "tag":"bully pt1",
+      "patterns":[
+        "E",
+        "e"
+      ],
+      "responses":[
+        "Obviously look at for some comebacks, helps a lot lmao\n\n         Here are some:\n         Some great comeback lines to deal with bullies are:\n         Whatever!\n         Do you feel better now?\n         If you are talking about me behind my back, clearly my life is a lot more interesting than yours is!\n         Let us move on!\n         You finally found something funny to say?\n         I am not sure why you keep saying these things about me, but I dont care.\n         Be really cool and stop this!\n         Enough!\n         Why are you talking to me?\n         Here we go again. This is boring. Let me know when you are done.\n         I have been called worse from better.\n         Wow, did you come up with that all by yourself?\n         Pardon me, but you seem to think that I care.\n\n         Once you give your comeback line IT iS SO IMPORTANT to just walk away and keep walking! Do not react or respond.\n         That is what the bully wants!\n\n         When you walk away you are taking away the bully power! Ufff i feel like how thor felt after destroying the Bifrost bridge!\n\n         Press F to continue xD"
+      ]
+    },
+    {
+      "tag":"bully pt2",
+      "patterns":[
+        "F",
+        "f"
+      ],
+      "responses": [
+      "Stay Positive (but never covid positive)\n         It can be hard to remember all your good points when someone is doing their best to be negative. However, try to think\n         of all the things you do well and remember that you are a valuable person. Thinking of how bad the bully must be feeling\n         may also help you to stay positive. Very important!\n\n         Picture Your Bully Like This...\n         Picture your bully standing on their head with their body stretching almost as if they were standing in front of a\n         distorted mirror like the kind you see at a carnival. Listen to their voice as it comes out all distorted and warbled.\n         And they have turned yellow with pink stripes. Now who is laughing? Lmao this is funny, but doesnt work \n\n         Build An Armored Shield Around You\n         Visualize a tall armored shield. Build that shield around you and when it is up, imagine all the things the bully is saying\n         bouncing off that armored shield.\n         Imagination - Shawn Mendes\n\n         Be Confident\n         Bullies usually pick on people that they think are weaker than they are, so stand up to them. \n         You might be scared but if you keep standing up to them they willl stop.\n\n         Press G to continue:"
+      ]
+    },
+    {
+      "tag":"bully pt3",
+      "patterns":[
+        "G",
+        "g"
+      ],
+      "responses":[
+        "Other ways to conquer your bully and throw them off track:\n\n         By loudly saying \"leave me alone\"\n         Say something funny (do it, works)\n         Look them in the eye and be nice to them\n\n         Keep out of the bully way\n         If you are afraid of your bully avoid places where your bully hangs out, or take a different route to school.\n         If the bully doesnt see you, they cant bully you. Kinda makes you inferior, but for short time, is a nice choice.\n\n         Use The Buddy System Against Bullies\n         Bullies feel empowered to bully one person, but rarely will they bully a group. Hang out with your friends.\n         If the bully does feel like conquering the group, walk away.\n\n         If after using these tactics and the bullying does not stop, it may be time to ask for help. Don't not be afraid to\n         let someone know that you are being bullied. There are people who care about you and will help you. I repeat, DONT BE AFRAID!\n\n         Get Help - Tell An Adult About the Bully\n         It may seem scary to tell someone but, telling will not only get you help, it will make you feel less afraid.\n         If you are being physically bullied and are in danger you must speak with a trusted adult immediately.\n         And if you cant go to your parents, seek out a trusted teacher guidance counselor or school psychologist. Trust me it is alright!\n         Be alright - Dean Lewis\n\n         If you have told a grown-up before and they have not done anything about it, tell someone else. Tell them exactly what\n         happened, who did the bullying, where and when it happened, how long it is been happening to you, and how it is making you feel.\n         When you tell your teacher, guidance counselor or school psychologist, ask them what they will do to help stop the bullying.\n         It is their job to help keep you safe. Most adults really care about bullying and will do everything they can to help you.\n         Keep telling until someone does help you!\n\n         Press H to continue :P"
+      ]
+    },
+    {
+      "tag":"bully pt4",
+      "patterns":[
+        "H",
+        "h"
+      ],
+      "responses":[
+        "VERY VERY IMPORTANT POINT AHEAD\n         If you are being bullied online ...\n         Cyberbullying isnt a joke, its becoming serious day by day\n\n         NEVER RESPOND\n         This could actually make the bullying worse. Immediately tell your parents or a trusted family member.\n         Have your parents (or you) block all communications from this person. Be sure to save evidence of the cyberbullying.\n         If you get a nasty e-mail, print it out or save it so that you can show it to an adult. (yOU CAN do it yourself also,\n         you are responsible enough :P\n\n         you should never respond to cyberbullying . including cyberbullying by text, email or instant messaging.\n         Do, however, save the texts, emails or instant. Proof chahiye bhai for anything\n         messages for proof in case you need it. It is great if you can be brave and courageous and show the bully you just don not care.\n         Cuz who is the boSS? You the BOSS.\n\n         Did we help you solve your problem?\n\n         Reply with a yes/no:"
+
+      ]
+    },
+    {
+      "tag": "substance abuse",
+      "patterns": [
+        "drugs",
+        "alcohol",
+        "daaru",
+        "weed",
+        "ganja",
+        "marijuana",
+        "ciggerates",
+        "smoking",
+        "drinking",
+        "cannabis",
+        "hookah",
+        "sheesha",
+        "drinks",
+        "smoke",
+        "substance abuse",
+        "Substance abuse",
+        "SUBSTANCE ABUSE"
+      ],
+      "responses": [
+       "There is much more to actually quitting drinking than attitude.\n         I would like to offer you some practical tips to help you stop the act of drinking.\n         As a 20 year hardcore alcoholic in recovery I can say I have experience as I am currently staying sober for my 25th day\n         by doing the following things:\n\n         Most people agree, you must LET GO not just of the past, but sometimes of your friends, acquaintances, and behaviors\n         that are familiar triggers.\n         Get ready for loneliness and boredom! You will need to find a hobby as well - I started going to the gym just to be there\n         in a healthy environment and I am really enjoying just walking on the treadmill and lifting a few weights once in a while\n         Even just sitting in the hot tub relaxes me. Again, atmosphere is really important.I have realized that making a lot of small right\n         decisions leads to another day sober.\n         For example, when I drive by my favorite liquor store I purposely press on the gas pedal and distract myself so I do not stop in.\n         When I go out at night to pick my son from work I take my teenage daughter with me so I can not stop at the liquor store.\n         I purposely do not travel with money on short trips. I buy my favorite drink ( clamato ) and have hot spicyvvirgin caesars at night.\n         I also have a few non alcoholic beers at my disposal for when I just need the taste of beer.\n         I can fool myself into thinking I am enjoying a nice cold alcoholic beer, and it helps with the cravings to drink.\n\n         Press S to continue :)"
+      ]
+    },
+    {
+      "tag": "abuse pt1",
+      "patterns": [
+        "S",
+        "s"
+      ],
+      "responses": [
+        "Do not be afraid to confide in family and friends about what you are trying to accomplish - you will soon figure out who your\n         real friends are when you quit drinking.\n         Humility is important! The real ones will support you and help you stay sober.\n         Again, sobering up long term is a one on one battle with yourself but it is one you can WIN. It does take determination and\n         an attitude change ( you have to WANT to live )\n         and it will get boring as you stare at yourself sober and can not figure out what to do with yourself.\n         Seriously, think about a gym membership or your local YMCA you can afford it now you aren not drinking It will be rewarding.\n         And again - try not to think of not drinking as a whole big challenge, break it down into smaller, easy to achieve decisions.\n         I always thought \" I will never quit drinking! \" as it seemed like an insurmountable problem taken as a whole.\n         However, it is really EASY to just drive PAST the liquor store!\n         One decision at a time my friend = SOBER!!!\n\n         I just did a little roleplay here, but i hope you do understand what I mean, in the beginning it may look hard, you may say to yourself\n         that it isnt possible, but over time,\n         You will achieve your goal for sure. The above discussion doesnt only apply to alcohol, but it will apply  to all kind of substance abuse.\n\n         Good Luck!\n\n         Did we help you solve your problem?\n\n         Reply with a yes/no:"
+      ]
+    },
+    {
+      "tag": "Obsesity",
+      "patterns": [
+        "fat",
+        "people call me fat",
+        "motu",
+        "moti",
+        "bodda",
+        "Sausage",
+        "obese",
+        "obesity",
+        "OBESITY",
+        "Obesity"
+      ],
+      "responses": [
+        "Estimated read time: 2 Minutes (surely worth it)\n\n         According to the Centers for Disease Control and Prevention, about 20% of 12- to 19-year-olds are obese, with Hispanic and Black children\n         more likely to be overweight or obese.\n         Doesnt mean you have to be affected by it, they are just facts, we thought yu must know!\n         Aside from the fact that overweight children are often targeted by bullies, obese kids also are at a much greater risk of lifelong health\n         problems,such as diabetes, arthritis, cancer, and heart disease. They also may struggle with body image issues or develop\n         eating disorders as an unhealthy way of changing their appearance. But your parents are not always aware of these issues.\n         Here are few tips we thought we could share!!\n\n         Press J to continue :D"
+      ]
+    },
+    {
+      "tag": "obesity pt2",
+      "patterns":[
+        "J",
+        "j"
+      ],
+      "responses": [
+        "1. Lose the soda.\n         2.Swap those calorie-heavy drinks, including juices and sports drinks, for good old water or low-fat milk.\n         3.Make vegetable and fruits easy snack choices.\n         4.Keep them clean, cut, and waiting in the front of the fridge so they are easy to see and eat. Start meals with a salad.\n         5.Encourage breakfast every day.\n         6.Teens will often give up their morning meal to sleep later, but that could mean they are so hungry at lunch that they will overeat or\n         give into junk-food cravings.\n         7.Hand them something to eat on the way to school, like a smoothie made out of yogurt and fresh fruit, or an apple and a wedge of\n         cheese.\n         8.Do not keep junk food in the house.\n         9.Although you have limited control of what your teen eats outside your walls, you can keep the bad stuff off the menu in your home.\n         10.Eat at home.\n         Restaurant foods have an average of 33% more calories than the same meal cooked at home, research shows. One study found\n         that the more often a family ate together, the less likely a teen was to be overweight.\n\n         Press K to continue :P"
+      ]
+      
+    },
+    {
+      "tag":"obesity pt3",
+      "patterns":[
+        "K",
+        "k"
+      ],
+      "responses":[
+        "Other tips would be ofcourse visit a dietician or a doctor specialized in the field, who can help you out!\n         Well, we know, bullying must be one thing concerning you, well, just type in \"I am bullied\", in the text down there and maybe I can help you out!\n         Your friend,\n         Klay.\n\n         Did we help you solve your problem?\n         Reply with a yes/no:"
+
+      ]
+    },
+    {
+      "tag":"academic problems",
+      "patterns":[
+        "marks",
+        "grade",
+        "results",
+        "low marks",
+        "studies",
+        "fail",
+        "low grades",
+        "academics",
+        "Academics",
+        "ACADEMICS"
+      ],
+      "responses":[
+        "ESTIMATED READ TIME : 2 MINS\n         ps: you wont even realise how it went\n\n         About 5% of high school students drop out of high school each year in the United States, according to the National Center\n         for Education Statistics. A high school dropout is likely to earn $200,000 less over his lifetime when compared to a high school graduate\n         which can have a significant impact on a young person future. But, it is no longer just the \"troubled teens\" who are dropping out of school.\n         Some teens feel so much pressure to get into a good college that they are burning themselves out before they graduate from high school.\n\n         Press L to continue xD"
+      ]
+    },
+    {
+      "tag":"academics pt1",
+      "patterns":[
+        "L",
+        "l"
+
+      ],
+      "responses":[
+        "Well we dont sort of have a very special solution for this, becuz, tbh almost everyone face this problem, but, we got some\n         solutions that may help you! \n\n         1. You do not have to sit 24x7 with books to make a good report.\n         2. Start paying attention in lectures.For that you have to leave your cell phone for sometime it will be painful but trust me it will be worth it.\n         3. Jot down important points being taught.You do not have to write down everything only the important point and some information about it.\n         4. Do not be in a hurry to write first understand the concept and then write.\n         5. At the end of the day study all what was taught in depth yeah it may sound kiddish but no gain without pain.Make notes and refer those.\n             Write down doubts if any.Approach the teacher get the doubts solved.It will improve your image in front of teachers as well.\n         6. Do one thing at a time do not end up in a mess by trying to study everything at once. Go slow.\n         7. Plan your daily schedule and follow it strictly no matter how hard you are tempted to take a break from it.\n         8. Even if you are not done with theory make sure you have understood the concept and can write about it in the exam.\n         9. Give ample of time for revision.Practice problems as much as u can.\n         All the Best!\n         Klay!\n\n         Did we help you solve your problem?\n         Reply with a yes/no:"
+      ]
+    },
+    {
+      "tag":"social media toxicity",
+      "patterns":[
+        "social",
+        "media",
+        "instagram",
+        "snapchat",
+        "discord",
+        "facebook",
+        "fb",
+        "fake",
+        "fake friends",
+        "toxic",
+        "insta likes",
+        "hate comments",
+        "comments",
+        "insta comments",
+        "Social media toxicity",
+        "social media toxicity",
+        "SOCIAL MEDIA TOXICITY"
+      ],
+      "responses":[
+        "Look, this is gonna be long as it is a serious problem that a lot of teens face now a days,\n         That is why we have prepared a little guide for you. Hope you enjoy reading :D\n         ESTIMATED READ TIME: 3.5 mins\n\n         A Guide to Making Social Media Less Toxic for You:\n\n         We know it is bad for our mental health, but it could be a positive place.\n         This is not surprising. Its hard to feel good when your commute to work is spent staring at photos of hot models,\n         ultra-rich celebrities, and successful friends.\n         But considering how social media has become part of everything we do—from interacting with friends to finding\n         jobs—its not realistic to cut it out completely from our lives.\n         There are some things you can do, to help yourself out!\n\n         Press M to continue :)"
+      ]
+    },
+    {
+      "tag":"social pt1",
+      "patterns":[
+        "M",
+        "m"
+      ],
+      "responses":[
+        "Here we go,\n\n         FOLLOW PEOPLE WHO INSPIRE YOU\n         If we look closely, many of the profiles we follow dont actually add anything positive to our day. Instead, follow people who inspire you.\n         This can be anyone, but a good starting point is to look for people who share the same hobbies.\n         Whether its fitness, music, art or waste-free living, following people with the same interests can keep you inspired to do what you love.\n         Your feed should be a melting pot of ideas that will get you excited to do more and shouldnt dissuade you from trying new things.\n\n         UNFOLLOW TOXIC \"Friend\"\n         It happens to everyone: were scrolling through our feed and a photo of Candice pops up, that girl you met once in a party years ago\n         who was only nice to you because she wanted to get with your friend. Do we care about what she is doing now? No? Unfollow.\n         And then there is Sam, the jerk from high school who was always talking bad about you behind your back. Do we care\n         what he is doing now? No? Unfollow.\n         These are just two examples, but we continue to follow so many toxic people because we either cant be bothered to click\n         the unfollow button or dont want to hurt their feelings.\n         But invest in those few seconds and see the change it could potentially make.\n\n         Press N to continue :P"
+      ]
+    },
+    {
+      "tag":"social pt2",
+      "patterns": [
+        "N",
+        "n"
+      ],
+      "responses":[
+        "MUTE, HIDE AND RESTRICT!!\n         If there are people that you dont want to unfollow because you still want to keep them as a contact or get in touch with them in the future,\n         there are alternative measures you can take to keep them at a distance. For starters, you can hide their Stories and mute their posts.\n         If it is your life you dont want acquaintances to judge, restrict what followers can see from your profile. Facebook allows you to change\n         this in privacy settings, while Instagram now allows you to only show Stories to close friends.\n\n         TAKE YOURSELF LESS SERIOUSLY--\n         It is easy to fall into a rabbit hole of trying to keep a perfect image online, where you always look good and are having the best time.\n         But it is fine to post yourself lazing on the couch on a Sunday looking unkempt. If we were comfortable doing these things around\n         each other as kids, why not as adults?\n         It can be liberating, not just for you, but for the people who follow you too because it highlights an idea rarely evident on social media:\n         \"No one is perfect\".\n\n         Press O to continue :O"
+      ]
+    },
+    {
+      "tag":"social pt3",
+      "patterns":[
+        "O",
+        "o"
+      ],
+      "responses": [
+        "MAKE GENUINE CONNECTIONS\n         Dont make social media aBout looking at other people, use it to make connections—real ones.\n         If something bothers you, talk about it. You will be surprised to find out that others have been in similar situations.\n         Ask for tips on how to cope with work pressures and be surprised to find out that that girl you were classmates with has the same problem.\n         Social media is not just for sharing or consuming, it is for conversations.\n\n         OTHERS THINGS WE CAN DO?---\n         We asked people for tips on how to make social media less toxic. Some valuable tips include:\n\n         1. Dont mistake followers for friends\n         2. Ban trolls, hoax news, and body-shaming comments\n         3. Dont photoshop your body\n         4. Turn off notifications\n         5. Flag things you dont want to see so the algorithm can pick up on it\n\n         Hope we helped you :P\n         Klay!\n\n         Did we help you solve your problem?\n         Reply with a yes/no:"
+      ]
+    },
+    {
+      "tag":"relationships",
+      "patterns":[
+        "love",
+        "love",
+        "girlfriend",
+        "boyfriend",
+        "relationship",
+        "Relationship",
+        "RELATIONSHIP"
+       ],
+      "responses":[
+        "A serious issue lot of teens these days face. Hope you have a happy read :D\n         ESTIMATED READ TIME: 3 mins (Will go faster than lightning mc queen)\n\n         Do look for someone you feel comfortable with\n         Being comfortable with someone means:\n\n         1. You can be yourself around her.\n         2. You can have different opinions on something, and know that it is okay.\n         3. You trust each other when you are not together.\n         4. You arent pressured to do things you dont want to do. This definitely includes sexual things, but also other things,\n         like going somewhere you dont want to go, or wearing something you dont want to wear.\n\n         Press P to continue :D"
+       ]
+    },
+    {
+      "tag":"relationship pt1",
+      "patterns":[
+        "P",
+        "p"
+      ],
+      "responses":[
+        "DONT FORGET YOUR FRIENDS!\n         Some people will drop all their friends after they start dating someone. They might not mean for it to happen, but it still does. \n         Dont be that person! No one wants a friend who will throw her over for someone else, and you still need a social life outside your\n         boyfriend or girlfriend.\n\n         Do know the difference between good and bad conflict?\n         We tend to think of conflict as a bad thing, but it isnt always. Conflict can even bring a couple closer together if they are able to\n         stick to these rules during a disagreement:\n\n         1. Explain how you feel and be specific\n         2. Listen to how she feels and try to be understanding\n         3. Avoid generalizations\n         4. Dont bring up past disagreements\n         5. Try to say things that are productive—not critical.\n\n         Press Q to continue xD"
+      ]
+    },
+    {
+      "tag":"relationship pt2",
+      "patterns":[
+        "Q",
+        "q"
+      ],
+      "responses":[
+        "Do know the signs of an abusive relationship:\n\n         If you are in an abusive relationship your boyfriend or girlfriend might:\n         1. Be constantly critical of you, and make you feel bad\n         2. Try to keep you away from your friends or family\n         3. Want to check your phone messages\n         4. Use social media to monitor where you are and who you are talking to\n         5. Threaten that something bad will happen if you break up\n         6. Force you to do things you dont want to do\n         7. Make you feel guilty\n         8. Hurt you.\n\n         Press R to continue :P"
+      ]
+    },
+    {
+      "tag":"relationship pt3",
+      "patterns": [
+        "R",
+        "r"
+      ],
+      "responses":[
+        "DO BE YOUR PERSON\n         It is natural to share interests with the person you are dating, but you also need to keep developing an identity outside\n         of that person, too.\n         Keep thinking about what you like and what you need. Have an interest that is just yours. It will improve your self-esteem\n         and being confident in yourself make you more likely to be confident in your relationship.\n\n         DONT HIDE YOUR PROBLEMS\n         If you encounter a problem in your relationship, dont panic. A problem does not automatically mean that the relationship\n         is doomed. However,problems only get bigger when people hide from them. Its much better to admit when something\n         is wrong, talk about it together, and try to fix it together.\n         It might feel scary, or awkward, to do this, but you still should. It will get easier over time, and working through problems\n         is going to be part of any good relationship.\n\n         Did we help you solve your problem?\n         Reply with a yes/no:"
+      ]
+    },
+    {
+      "tag":"cant help",
+      "patterns":[
+        "not helping",
+        "help",
+        "not working"
+        ],
+      "responses":[
+        "This is a link to our social media handle! You can just text my programmers there :) They will always be there for anyone who is in need and requires help...But please do not text that account for no reason(Note: It will be totally anonymous so you do not have to worry about anything!)\n\thttps://discord.gg/3bxEGZKtKe",
+        "Please text my programmers at this social media handle so that they can personally help you!(Note: It will be totally anonymous and your information would not be disclosed so you can text them there openly with no worries)\n\thttps://discord.gg/3bxEGZKtKe"
+      ]
+    },
+    {
+      "tag": "none",
+      "patterns": ["none","None","NONE"],
+      "responses": [
+        "I am really sorry I could not help you.\n         This is a link to our social media handle! You can just text my programmers there :)\n         https://discord.gg/3bxEGZKtKe\n         They will always be there for anyone who is in need and need help and just want to talk to someone :)\n         Note: It will be totally anonymous so you do not have to worry about your personal information getting leaked!\n\n         You can check out our epic music playlist XD. If u want to end the conversation type \"quit\""
+      ]
+    },
+    {
+      "tag": "transcript",
+      "patterns": ["quit","Quit","QUIT"],
+      "responses":[
+        "Do you want the transcript of the chat? (Type \"save\" if you want or \"discard\" if you don't want.)"
+      ]
+    },
+    {
+      "tag":"transcript_yes",
+      "patterns": ["save","Save","SAVE"],
+      "responses": [
+        "Ok then please check your desktop :). Bye :). (Type \"Bye\" to end the convo)"
+      ]
+    },
+    {
+      "tag":"transcript_no",
+      "patterns": ["discard","DISCARD","Discard"],
+      "responses": [
+        "Cool then Bye :). (Type \"Bye\" to end the convo)"
+      ]
+    }
+  ]
+}
