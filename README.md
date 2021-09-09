@@ -2,7 +2,7 @@
  
 ## To run the bot, follow this:
 
-**Firstly run requirements.bat**
+###### **Firstly run requirements.bat**
 
 After that run this in the python shell
 >import nltk \
