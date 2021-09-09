@@ -4,7 +4,7 @@
 **Run requirements.bat**
 
 Then run this in the python shell
->import nltk
+>import nltk \
 >nltk.download("punkt")
 
 After this, run **Klaybot.bat**
