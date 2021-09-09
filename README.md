@@ -22,8 +22,8 @@ Punkt is the tokenizer used to train the way the bot speaks.
 After this, run **Klaybot.bat** to start the bot.
  
 ## 📸 Screenshots
-<img src="https://user-images.githubusercontent.com/72490903/132651449-218ab220-2146-478f-9a94-b054c50e5b43.png" width="700" height="500">
- <img src="https://user-images.githubusercontent.com/72490903/132651490-1b94ce52-7c48-4d3b-80ec-99cd87460ceb.png" width="700" height="500" align = "right">\\
+<img src="https://user-images.githubusercontent.com/72490903/132651449-218ab220-2146-478f-9a94-b054c50e5b43.png" width="800" height="500">
+ <img src="https://user-images.githubusercontent.com/72490903/132651490-1b94ce52-7c48-4d3b-80ec-99cd87460ceb.png" width="800" height="500" align = "right" padding-bottom:10px>
 <img src="https://user-images.githubusercontent.com/72490903/132651520-02f6118f-056e-4046-b818-7c8f1f9f012f.png" width="800" height="500">
 
 
