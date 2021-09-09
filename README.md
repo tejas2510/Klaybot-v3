@@ -27,7 +27,7 @@ After this, run **Klaybot.bat** to start the bot.
  <img src="https://lh3.googleusercontent.com/proxy/EOiVXFLPQ575yzbGIesS_rA--4-NP2h6uxefg261ASQy8hLFFXA5R056XXj8LexDm0UeG0azey3XlfO0O7c90JbX" width="3000" height="20" align = "right"> 
 <img src="https://user-images.githubusercontent.com/72490903/132651520-02f6118f-056e-4046-b818-7c8f1f9f012f.png" width="712" height="360">
 
-## 🏃‍♂️ Run the projects
+## 🏃‍♂️ Run the project...
 
 [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/tejas2510/Klaybot-v6)
 [![Run on Repl.it](https://repl.it/badge/github/SudhanPlayz/Discord-MusicBot)](https://repl.it/github/tejas2510/Klaybot-v6)
