@@ -18,7 +18,7 @@ After this, run **Klaybot.bat** to start the bot.
 
 
 
-## 💨 Run the projects
+## 🏃‍♂️ Run the projects
 
 [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/tejas2510/Klaybot-v6)
 [![Run on Repl.it](https://repl.it/badge/github/SudhanPlayz/Discord-MusicBot)](https://repl.it/github/tejas2510/Klaybot-v6)
@@ -31,3 +31,5 @@ Contributions are always welcomed :D Make sure to follow [Contributing.md](/CONT
 <a href="https://github.com/tejas2510/Klaybot-v6/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=tejas2510/Klaybot-v6" />
 </a>
+ 
+Made with 💖 and Python!
