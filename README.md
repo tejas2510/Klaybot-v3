@@ -5,7 +5,7 @@
 
 ## ❗Prerequisites❗
 - A computer (> ^_^ )>
-- [Python 3](https://www.python.org/downloads/release/python-385/)
+- [Python 3.X.X](https://www.python.org/downloads/release/python-385/)
  
 ##  📝  How to make it work?
 
