@@ -9,13 +9,14 @@ from tkinter.font import BOLD
 from PIL import ImageTk, Image
 from tkinter import messagebox
 import pyttsx3
+import pickle
 
 
 engine = pyttsx3.init()
 
 a = None
-#text bot
 def bot():
+    root.destroy()
     BG_GRAY = "#ABB2B9"
     BG_COLOR = "#17202A"
     TEXT_COLOR = "#EAECEE"
@@ -88,6 +89,8 @@ def bot():
                 if a == "discard":
                     
                     os.remove('Transcript.txt')
+                
+
                 sys.exit()   
             content = response(msg)
             self.msg_entry.delete(0, END)
@@ -119,6 +122,7 @@ def bot():
     app.run()
 
 def voicebot(x):
+    root.destroy()
     BG_GRAY = "#ABB2B9"
     BG_COLOR = "#17202A"
     TEXT_COLOR = "#EAECEE"
@@ -184,7 +188,8 @@ def voicebot(x):
             if "bye" in msg.lower():
                 if a == "discard":
                     
-                    os.remove('Transcript.txt') 
+                    os.remove('Transcript.txt')
+
                 sys.exit()   
             content = response(msg)
             self.msg_entry.delete(0, END)
@@ -226,15 +231,15 @@ def voice_final():
     male = (f"{male_value.get()}")
     female = (f"{female_value.get()}")
     print("Happy conversation! Just remember, my devs are always with you, headover to discord.gg/klayspg")
-    with open("./vars/male.txt","w") as m:
-        m.write(male)
-    with open("./vars/female.txt","w") as f:
-        f.write(female)
-    male_file = open("./vars/male.txt")
-    male_file_no = male_file.read()
+    with open("./vars/male.txt","wb") as m:
+        pickle.dump(male,m)
+    with open("./vars/female.txt","wb") as f:
+        pickle.dump(female, f)
+    male_file = open("./vars/male.txt", "rb")
+    male_file_no = pickle.load(male_file)
     male_file = int(male_file_no)
-    female_file = open("./vars/female.txt")
-    female_file_no = female_file.read()
+    female_file = open("./vars/female.txt", "rb")
+    female_file_no = pickle.load(female_file)
     female_file = int(female_file_no)
     if male_file == 1 and female_file == 0:
         voicebot(2)
@@ -291,39 +296,40 @@ def voice_choice():
     
 
 def getvals():
+    
     global contents
     name = (f"{namevalue.get()} ")
     age = (f"{agevalue.get()} ")
     ver = (f"{verificationvalue.get()}")
     voice = (f"{voicevalue.get()}")
     text = (f"{textvalue.get()}")
-    with open("./vars/ver.txt", "w") as i:
-        i.write(ver)
-    with open("./assets/age.txt", "w") as f:
-        f.write(age)
-    with open("./assets/name.txt","w") as n:
-        n.write(name)
-    with open("./vars/voice.txt","w") as n:
-        n.write(voice)
-    with open("./assets/text.txt","w") as n:
-        n.write(text)
-    file = open("./assets/age.txt")
-    file = file.read()
+    with open("./vars/ver.txt", "wb") as i:
+        pickle.dump(ver, i)
+    with open("./assets/age.txt", "wb") as f:
+        pickle.dump(age,f)
+    with open("./assets/name.txt","wb") as n:
+        pickle.dump(name, n)
+    with open("./vars/voice.txt","wb") as n:
+        pickle.dump(voice, n)
+    with open("./assets/text.txt","wb") as n:
+        pickle.dump(text, n)
+    file = open("./assets/age.txt", 'rb')
+    file = pickle.load(file)
     try:
         file = int(file)
     except:
         messagebox.showerror('Type error', 'Breh, Age is a number!')
-    folder = open("./vars/ver.txt")
-    folder = folder.read()
+    folder = open("./vars/ver.txt", 'rb')
+    folder = pickle.load(folder)
     folder = int(folder)
-    v = open("./vars/voice.txt")
-    v = v.read()
+    v = open("./vars/voice.txt", 'rb')
+    v = pickle.load(v)
     v = int(v)
-    t = open("./assets/text.txt")
-    t = t.read()
+    t = open("./assets/text.txt", 'rb')
+    t = pickle.load(t)
     t = int(t)
-    f = open("./assets/name.txt")
-    contents = f.read()
+    f = open("./assets/name.txt", 'rb')
+    contents = pickle.load(f)
     if file >= 15 and file <= 25 and folder == 1:
         if t == 1 and v == 0:
             bot()
@@ -418,7 +424,7 @@ class Login:
 
 root = Tk()
 
-root.iconbitmap('./assets/logo.ico')
+
 
 
 
