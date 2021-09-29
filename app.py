@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import *
+from typing import final
 from response import bot_name, response
 from os import sys
 import os
@@ -10,8 +11,9 @@ from PIL import ImageTk, Image
 from tkinter import messagebox
 import pyttsx3
 import pickle
+from datetime import datetime
 
-
+#os.remove('Transcript.dat')
 engine = pyttsx3.init()
 
 a = None
@@ -81,17 +83,35 @@ def bot():
 
         def _insert_message(self, msg, sender):
             global a
+            global kek
             if not msg:
                 return
-            if msg == "discard":
+            if msg.lower() == "save":
+                kek = msg
+            if msg.lower() == "discard":
                 a=msg
             if "bye" in msg.lower():
                 if a == "discard":
-                    
-                    os.remove('Transcript.txt')
-                
+                    os.remove('Transcript.dat')
+                elif kek == "save":
+                    now = datetime.now()
+                    format = now.strftime("%Y-%m-%d----%H-%M-%S")
+                    txt = './Transcript/Transcript '+ format + '.txt'
+                    binary = open('Transcript.dat','rb')
+                    l = True
+                    while l:
+                        try:
+                            decode = pickle.load(binary)
+                            final = open(txt,'a')
+                            final.write(decode)
+                            final.close()
+                        except EOFError:
+                            l = False
+                    binary.close()
+                    os.remove('Transcript.dat')  
 
-                sys.exit()   
+                self.window.destroy()
+                main_window()
             content = response(msg)
             self.msg_entry.delete(0, END)
             msg1 = f"{sender}: {msg}\n\n"
@@ -110,10 +130,9 @@ def bot():
 
             self.text_widget.see(END)
             message = msg1 +"\n"+msg2
-            
-            with open("Transcript.txt","a") as file:
-                file.write(message)
-            
+            with open("Transcript.dat","ab") as file:
+                    pickle.dump(message, file)
+                
             
          
 
@@ -181,16 +200,35 @@ def voicebot(x):
 
         def _insert_message(self, msg, sender):
             global a
+            global kek
             if not msg:
                 return
-            if msg == "discard":
+            if msg.lower() == "save":
+                kek = msg
+            if msg.lower() == "discard":
                 a=msg
             if "bye" in msg.lower():
                 if a == "discard":
-                    
-                    os.remove('Transcript.txt')
+                    os.remove('Transcript.dat')
+                elif kek == "save":
+                    now = datetime.now()
+                    format = now.strftime("%Y-%m-%d----%H-%M-%S")
+                    txt = './Transcript/Transcript '+ format + '.txt'
+                    binary = open('Transcript.dat','rb')
+                    l = True
+                    while l:
+                        try:
+                            decode = pickle.load(binary)
+                            final = open(txt,'a')
+                            final.write(decode)
+                            final.close()
+                        except EOFError:
+                            l = False
+                    binary.close()
+                    os.remove('Transcript.dat')  
 
-                sys.exit()   
+                self.window.destroy()
+                main_window()   
             content = response(msg)
             self.msg_entry.delete(0, END)
             msg1 = f"{sender}: {msg}\n\n"
@@ -209,8 +247,8 @@ def voicebot(x):
             self.text_widget.see(END)
             message = msg1 +"\n"+msg2
             
-            with open("Transcript.txt","a") as file:
-                file.write(message)
+            with open("Transcript.dat","ab") as file:
+                pickle.dump(message, file)
             
             rate = engine.getProperty('rate')
             voices = engine.getProperty('voices')
@@ -343,90 +381,94 @@ def getvals():
     if file < 15 or file > 25:
         messagebox.showerror('Age error', 'We currently dont support age groups more than 25 or under 15.')
 
-class Login:
-    def __init__(self,root):
-        global namevalue
-        global agevalue
-        global verificationvalue
-        global voicevalue
-        global textvalue
-        self.root=root
-        self.root.title("Klay Bot")
-        self.root.geometry("1068x600+100+50")
-        self.root.resizable(False,False)
+def main_window():
+    global root
+    class Login:
+        def __init__(self,root):
+            global namevalue
+            global agevalue
+            global verificationvalue
+            global voicevalue
+            global textvalue
+            self.root=root
+            self.root.title("Klay Bot")
+            self.root.geometry("1068x600+100+50")
+            self.root.resizable(False,False)
 
-        image1 = Image.open("./assets/bg3.png")
-        test = ImageTk.PhotoImage(image1)
-        label1 = tkinter.Label(image=test)
-        label1.image = test
+            image1 = Image.open("./assets/bg3.png")
+            test = ImageTk.PhotoImage(image1)
+            label1 = tkinter.Label(image=test)
+            label1.image = test
 
-        
-        
-    # Position image
-        label1.place(x=450, y=-175)
-        
+                
+                
+        # Position image
+            label1.place(x=450, y=-175)
+                
 
-        FONT_BOLD = "Helvetica 13 bold"
-        FONT = "Helvetica 14"
-        
-        
-    #Frame
-        Frame_login=Frame(self.root,bg="white")
-        Frame_login.place(x=0,y=0,height=1200,width=500)
-
-
-        namevalue = StringVar()
-        agevalue = StringVar()
-        verificationvalue = IntVar()
-        textvalue = IntVar()
-        voicevalue = IntVar()
-     
-    #Warning
-        title=Label(Frame_login,text="Klaybot",font=("Terminal",35),fg="#C85417",bg="white").place(x=130,y=50)
-        title=Label(Frame_login,text='KlayBot is not a crisis service. KlayBot is a ',font=("Courier New",11,"bold"),fg="#808080",bg="white").place(x=40,y=130)
-        title=Label(Frame_login,text='self-help tool that is not intended to be a ',font=("Courier New",11,"bold"),fg="#808080",bg="white").place(x=60,y=155)
-        title=Label(Frame_login,text='medical intervention. No human is monitoring your ',font=("Courier New",11,"bold"),fg="#808080",bg="white").place(x=60,y=180)
-        title=Label(Frame_login,text='live conversations with KlayBot. If you are in a ',font=("Courier New",11,"bold"),fg="#808080",bg="white").place(x=40,y=205)
-        title=Label(Frame_login,text='crisis, type ',font=("Courier New",11,"bold"),fg="#808080",bg="white").place(x=60,y=230)
-        title=Label(Frame_login,text='"SOS" ',font=("Courier New",11,"bold"),fg="red",bg="white").place(x=175,y=230)
-        title=Label(Frame_login,text='in the app and KlayBot will',font=("Courier New",11,"bold"),fg="#808080",bg="white").place(x=228,y=230)
-        title=Label(Frame_login,text='suggest external resources that you can use.',font=("Courier New",11,"bold"),fg="#808080",bg="white").place(x=60,y=255)
-        title=Label(Frame_login,text='⊂(◉‿◉)つ',font=("Courier New",19,"bold"),fg="#808080",bg="white").place(x=180,y=285)
-
-    #name and age
-        title=Label(Frame_login,text="Name",font=("Courier New",11,"bold"),fg="#000000",bg="white").place(x=40,y=335)
-        self_txt_user=Entry(Frame_login,font=("Terminal",11),bg="lightgray",textvariable=namevalue)
-        self_txt_user.place(x=150,y=340,width=190,height=20)
-        title=Label(Frame_login,text="Age",font=("Courier New",11,"bold"),fg="#000000",bg="white").place(x=40,y=375)
-        self_txt_pass=Entry(Frame_login,font=("Terminal",11),bg="lightgray",textvariable=agevalue)
-        self_txt_pass.place(x=150,y=385,width=190,height=20)
-    
-    #text
-        title=Label(Frame_login,text="Way of communication:",font=("Terminal",12,"bold"),fg="#000000",bg="white").place(x=80,y=420)
-
-        checkbutton_variable = IntVar()
-    #voice
-        voice_check = Checkbutton(text="Voice (Beta)",font=("Terminal", 9),bg = "white", height=2, width = 10,variable=voicevalue)
-        voice_check.place(x=120, y= 460)
-    
-    #text
-        text_check = Checkbutton(text="Text",font=("Terminal", 9),bg = "white", height=2, width = 10,variable=textvalue)
-        text_check.place(x=240, y= 460)
-    
-    #T&C
-        verification = Checkbutton(text="I have read and agree to the T&C",font=("Terminal", 9),bg = "white", height=2, width = 50,variable=verificationvalue)
-        verification.place(x=20, y= 500)
-        
-      
-    #Submit
-        submit_button=Button(Frame_login,text="Submit",fg="black",bg="#FFFFFF",font=("Courier New",18),command=getvals).place(x=170,y=550)
-        
-
-root = Tk()
+            FONT_BOLD = "Helvetica 13 bold"
+            FONT = "Helvetica 14"
+                
+                
+        #Frame
+            Frame_login=Frame(self.root,bg="white")
+            Frame_login.place(x=0,y=0,height=1200,width=500)
 
 
+            namevalue = StringVar()
+            agevalue = StringVar()
+            verificationvalue = IntVar()
+            textvalue = IntVar()
+            voicevalue = IntVar()
+            
+        #Warning
+            title=Label(Frame_login,text="Klaybot",font=("Terminal",35),fg="#C85417",bg="white").place(x=130,y=50)
+            title=Label(Frame_login,text='KlayBot is not a crisis service. KlayBot is a ',font=("Courier New",11,"bold"),fg="#808080",bg="white").place(x=40,y=130)
+            title=Label(Frame_login,text='self-help tool that is not intended to be a ',font=("Courier New",11,"bold"),fg="#808080",bg="white").place(x=60,y=155)
+            title=Label(Frame_login,text='medical intervention. No human is monitoring your ',font=("Courier New",11,"bold"),fg="#808080",bg="white").place(x=60,y=180)
+            title=Label(Frame_login,text='live conversations with KlayBot. If you are in a ',font=("Courier New",11,"bold"),fg="#808080",bg="white").place(x=40,y=205)
+            title=Label(Frame_login,text='crisis, type ',font=("Courier New",11,"bold"),fg="#808080",bg="white").place(x=60,y=230)
+            title=Label(Frame_login,text='"SOS" ',font=("Courier New",11,"bold"),fg="red",bg="white").place(x=175,y=230)
+            title=Label(Frame_login,text='in the app and KlayBot will',font=("Courier New",11,"bold"),fg="#808080",bg="white").place(x=228,y=230)
+            title=Label(Frame_login,text='suggest external resources that you can use.',font=("Courier New",11,"bold"),fg="#808080",bg="white").place(x=60,y=255)
+            title=Label(Frame_login,text='⊂(◉‿◉)つ',font=("Courier New",19,"bold"),fg="#808080",bg="white").place(x=180,y=285)
+
+        #name and age
+            title=Label(Frame_login,text="Name",font=("Courier New",11,"bold"),fg="#000000",bg="white").place(x=40,y=335)
+            self_txt_user=Entry(Frame_login,font=("Terminal",11),bg="lightgray",textvariable=namevalue)
+            self_txt_user.place(x=150,y=340,width=190,height=20)
+            title=Label(Frame_login,text="Age",font=("Courier New",11,"bold"),fg="#000000",bg="white").place(x=40,y=375)
+            self_txt_pass=Entry(Frame_login,font=("Terminal",11),bg="lightgray",textvariable=agevalue)
+            self_txt_pass.place(x=150,y=385,width=190,height=20)
+            
+        #text
+            title=Label(Frame_login,text="Way of communication:",font=("Terminal",12,"bold"),fg="#000000",bg="white").place(x=80,y=420)
+
+            checkbutton_variable = IntVar()
+        #voice
+            voice_check = Checkbutton(text="Voice (Beta)",font=("Terminal", 9),bg = "white", height=2, width = 10,variable=voicevalue)
+            voice_check.place(x=120, y= 460)
+            
+            #text
+            text_check = Checkbutton(text="Text",font=("Terminal", 9),bg = "white", height=2, width = 10,variable=textvalue)
+            text_check.place(x=240, y= 460)
+            
+        #T&C
+            verification = Checkbutton(text="I have read and agree to the T&C",font=("Terminal", 9),bg = "white", height=2, width = 50,variable=verificationvalue)
+            verification.place(x=20, y= 500)
+                
+            
+        #Submit
+            submit_button=Button(Frame_login,text="Submit",fg="black",bg="#FFFFFF",font=("Courier New",18),command=getvals).place(x=170,y=550)
+                
+
+    root = Tk()
 
 
 
-obj = Login(root)
-root.mainloop()
+
+
+    obj = Login(root)
+    root.mainloop()
+
+main_window()
