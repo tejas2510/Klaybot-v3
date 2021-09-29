@@ -78,8 +78,11 @@ def bot():
             send_button.place(relx=0.77, rely=0.008, relheight=0.06, relwidth=0.22)
 
         def _on_enter_pressed(self, event):
-            msg = self.msg_entry.get()
-            self._insert_message(msg, "You")
+            try:
+                msg = self.msg_entry.get()
+                self._insert_message(msg, "You")
+            except:
+                return None
 
         def _insert_message(self, msg, sender):
             global a
@@ -368,13 +371,16 @@ def getvals():
     t = int(t)
     f = open("./assets/name.txt", 'rb')
     contents = pickle.load(f)
-    if file >= 15 and file <= 25 and folder == 1:
-        if t == 1 and v == 0:
-            bot()
-        elif t ==0 and v == 1:
-            voice_choice()
-        else:
-            messagebox.showerror('Choice error', 'Hey! Choose either of the ways you wanna comunicate :/')
+    try:
+        if file >= 15 and file <= 25 and folder == 1:
+            if t == 1 and v == 0:
+                bot()
+            elif t ==0 and v == 1:
+                voice_choice()
+            else:
+                messagebox.showerror('Choice error', 'Hey! Choose either of the ways you wanna comunicate :/')
+    except:
+        return None
     if folder != 1:
         messagebox.showerror('Error', 'Please accept the T&C to continue...')
 
