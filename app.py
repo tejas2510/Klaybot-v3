@@ -96,7 +96,7 @@ def bot():
                 elif kek == "save":
                     now = datetime.now()
                     format = now.strftime("%Y-%m-%d----%H-%M-%S")
-                    txt = './Transcript/Transcript '+ format + '.txt'
+                    txt = './Transcripts/Transcript '+ format + '.txt'
                     binary = open('Transcript.dat','rb')
                     l = True
                     while l:
@@ -213,7 +213,7 @@ def voicebot(x):
                 elif kek == "save":
                     now = datetime.now()
                     format = now.strftime("%Y-%m-%d----%H-%M-%S")
-                    txt = './Transcript/Transcript '+ format + '.txt'
+                    txt = './Transcripts/Transcript '+ format + '.txt'
                     binary = open('Transcript.dat','rb')
                     l = True
                     while l:
