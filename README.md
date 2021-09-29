@@ -6,6 +6,7 @@
 ## ❗Prerequisites❗
 - A computer (> ^_^ )>
 - [Python 3.X.X](https://www.python.org/downloads/release/python-385/)
+- [Recommended pip v20.1.1](https://www.geeksforgeeks.org/how-to-install-pip-on-windows/)
  
 ##  📝  How to make it work?
 
